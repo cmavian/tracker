@@ -21,8 +21,8 @@ process SplitFasta {
 	script:
 	"""
 #!/bin/bash
-python3.9 /work/bin/NinetyDay.py ${params.fastafile} 
-python3.9 /work/bin/splitFasta.py last90.fasta fragment ${params.num_seqs}
+#python3.9 /work/bin/NinetyDay.py ${params.fastafile} 
+python3.9 /work/bin/splitFasta.py ${params.fastafile} fragment ${params.num_seqs} #last90.fasta
 """
 }
 
